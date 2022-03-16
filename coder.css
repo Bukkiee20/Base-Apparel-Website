@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    background-image: url(images/sun-tornado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    padding: 40px 100px;
+}
+.logo img{
+    width: 135px;
+}
+.navlinks{
+    flex: 1;
+    
+}
+
+.navlinks ul{
+    margin-left: 50px;
+    display: inline;
+    
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    padding: 8px 25px;
+    font-size: 13px;
+    
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: salmon;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+.btn{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+.btn{
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    
+}
+.btn:hover{
+    color: salmon;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.navlinks .btn{
+    float: right;
+    margin-left: 50px;
+}
+.main{
+    margin: 80px 130px;
+    color: rgb(231, 120, 107);
+}
+.main h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-shadow: 0.2rem 0.2rem black;
+}
+.main h1 span{
+    color: rgb(85, 77, 77);
+}
+.main .btn{
+    width: 150px;
+    transition: width 2s;
+}
+.main .btn:hover{
+    width:200px;
+}
+.icons{
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.search-icon{
+    height: 60%;
+    width: 50px;
+    margin-top: 40px;
+}
+.search-icon .fa{
+    margin: 30px 10px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.search-icon .fa:hover{
+    color: salmon;
+}
+.social-icon{
+    height: 40%;
+    width: 50px;
+    background-color: rgb(231, 120, 107);
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+}
+.social-icon .fa-brands{
+    margin: 20px 8px;
+    display: block;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.social-icon .fa-brands:hover{
+    color: white;
+    background-color: black;
+}
+
+
